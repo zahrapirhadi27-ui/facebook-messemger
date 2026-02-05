@@ -1,1 +1,10 @@
 @import "tailwindcss";
+li p {
+    color:#8E8E93 ;
+
+}
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
