@@ -49,22 +49,38 @@
       <section>
         <ul class="flex justify-center align-center gap-7">
           <li>
-            <svg
-              width="52"
-              height="52"
-              viewBox="0 0 52 52"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M26 52C40.3594 52 52 40.3594 52 26C52 11.6406 40.3594 0 26 0C11.6406 0 0 11.6406 0 26C0 40.3594 11.6406 52 26 52Z"
-                fill="black"
-                fill-opacity="0.04"
-              />
-            </svg>
-            <p>Your story</p>
+            <div class="relative">
+              <svg
+                class="absolute top-[15.5px] left-[15.5px]"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.1222 0.00645361L10.25 0C10.8972 0 11.4295 0.491875 11.4935 1.12219L11.5 1.25V9H19.25C19.8972 9 20.4295 9.49187 20.4935 10.1222L20.5 10.25C20.5 10.8972 20.0081 11.4295 19.3778 11.4935L19.25 11.5H11.5V19.25C11.5 19.8972 11.0081 20.4295 10.3778 20.4935L10.25 20.5C9.60279 20.5 9.07047 20.0081 9.00645 19.3778L9 19.25V11.5H1.25C0.602791 11.5 0.0704661 11.0081 0.00645361 10.3778L0 10.25C0 9.60279 0.491875 9.07047 1.12219 9.00645L1.25 9H9V1.25C9 0.602791 9.49187 0.0704661 10.1222 0.00645361L10.25 0L10.1222 0.00645361Z"
+                  fill="black"
+                />
+              </svg>
+
+              <svg
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M26 52C40.3594 52 52 40.3594 52 26C52 11.6406 40.3594 0 26 0C11.6406 0 0 11.6406 0 26C0 40.3594 11.6406 52 26 52Z"
+                  fill="black"
+                  fill-opacity="0.04"
+                />
+              </svg>
+              <p>Your story</p>
+            </div>
           </li>
           <li>
             <svg
@@ -252,13 +268,144 @@
       </section>
     </header>
     <main>
-      <div class="flex">
+      <div class="flex items-center gap-3 mx-[20px] my-[20px]">
         <img src="./public/first.png" class="w-15 h-15 rounded-full" />
         <div>
-        <h2>Martin Randolph</h2>
-        <p>You: What’s man! · 9:40 AM</p></div>
+          <h2 class="text-[17px] font-medium">Martin Randolph</h2>
+          <p class="text-[#8E8E93] text-[14px] font-normal">
+            You: What’s man! · 9:40 AM
+          </p>
+        </div>
+        <svg
+          class="ml-[95px]"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
+            fill="#C2C6CC"
+          />
+        </svg>
+      </div>
+
+      <div class="flex items-center gap-3 mx-[20px] my-[20px]">
+        <img src="./public/second.png" class="w-15 h-15 rounded-full" />
+        <div>
+          <h2 class="text-[17px] font-medium">Andrew Parker</h2>
+          <p class="text-[#8E8E93] text-[14px] font-normal">
+            You: Ok, thanks! · 9:25 AM
+          </p>
+        </div>
+        <svg
+          class="ml-[103px]"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM10.4189 5.03906C10.8095 4.64864 11.4425 4.64862 11.833 5.03906C12.1935 5.39955 12.221 5.96708 11.916 6.35938L11.833 6.45312L7.39258 10.8936C7.03213 11.2537 6.46543 11.2814 6.07324 10.9766L5.97852 10.8936L3.79199 8.70703C3.40183 8.31658 3.40183 7.68342 3.79199 7.29297C4.15248 6.93248 4.72001 6.90494 5.1123 7.20996L5.20703 7.29297L6.68555 8.77246L10.4189 5.03906Z"
+            fill="#C2C6CC"
+          />
+        </svg>
+      </div>
+
+      <div class="flex items-center gap-3 mx-[20px] my-[20px]">
+        <img src="./public/three.png" class="w-15 h-15 rounded-full" />
+        <div>
+          <h2 class="text-[17px] font-medium">Karen Castillo</h2>
+          <p class="text-[#8E8E93] text-[14px] font-normal">
+            You: Ok, See you in To… · Fri
+          </p>
+        </div>
+        <svg
+          class="ml-[91px]"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM10.4189 5.03906C10.8095 4.64864 11.4425 4.64862 11.833 5.03906C12.1935 5.39955 12.221 5.96708 11.916 6.35938L11.833 6.45312L7.39258 10.8936C7.03213 11.2537 6.46543 11.2814 6.07324 10.9766L5.97852 10.8936L3.79199 8.70703C3.40183 8.31658 3.40183 7.68342 3.79199 7.29297C4.15248 6.93248 4.72001 6.90494 5.1123 7.20996L5.20703 7.29297L6.68555 8.77246L10.4189 5.03906Z"
+            fill="#C2C6CC"
+          />
+        </svg>
+      </div>
+
+      <div class="flex items-center gap-3 mx-[20px] my-[20px]">
+        <img src="./public/four.png" class="w-15 h-15 rounded-full" />
+        <div>
+          <h2 class="text-[17px] font-medium">Maisy Humphrey</h2>
+          <p class="text-[#8E8E93] text-[14px] font-normal">
+            Have a good day, Maisy! · Fri
+          </p>
+        </div>
+        <svg
+          class="ml-[85px]"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM10.4189 5.03906C10.8095 4.64864 11.4425 4.64862 11.833 5.03906C12.1935 5.39955 12.221 5.96708 11.916 6.35938L11.833 6.45312L7.39258 10.8936C7.03213 11.2537 6.46543 11.2814 6.07324 10.9766L5.97852 10.8936L3.79199 8.70703C3.40183 8.31658 3.40183 7.68342 3.79199 7.29297C4.15248 6.93248 4.72001 6.90494 5.1123 7.20996L5.20703 7.29297L6.68555 8.77246L10.4189 5.03906Z"
+            fill="#C2C6CC"
+          />
+        </svg>
+      </div>
+
+      <div class="flex items-center gap-3 mx-[20px] my-[20px]">
+        <img src="./public/five.png" class="w-15 h-15 rounded-full" />
+        <div>
+          <h2 class="text-[17px] font-medium">Joshua Lawrence</h2>
+          <p class="text-[#8E8E93] text-[14px] font-normal">
+            The business plan loo… · Thu
+          </p>
+        </div>
+      </div>
+
+
+      <div class="flex gap-3 relative">
+        <img src="./public/six.png" class="w-[70px] h-[70px] rounded-[100px] mx-[15px] my-[10px] ">
+        <div>
+          <h2 class=" text-[17px] font-medium">Pixsellz</h2>
+          <svg class="absolute  top-[8px] left-[175px]" width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1118_110)">
+<rect width="22" height="15" rx="3" fill="black" fill-opacity="0.2"/>
+<path d="M8.91895 11H10.6753L7.98438 3.24951H6.07764L3.38672 11H5.01416L5.61035 9.12012H8.3335L8.91895 11ZM6.93164 4.82324H7.02832L7.98975 7.90625H5.95947L6.93164 4.82324ZM13.6401 11.0913C14.4619 11.0913 15.1333 10.71 15.4502 10.0708H15.5469V11H17.0615V2.8252H15.4985V6.03174H15.4072C15.1011 5.37646 14.4404 4.98975 13.6401 4.98975C12.1523 4.98975 11.2285 6.15527 11.2285 8.03516C11.2285 9.92041 12.147 11.0913 13.6401 11.0913ZM14.1719 6.25732C15.0044 6.25732 15.5146 6.93945 15.5146 8.0459C15.5146 9.15234 15.0098 9.8291 14.1719 9.8291C13.334 9.8291 12.8345 9.15771 12.8345 8.04053C12.8345 6.92871 13.3394 6.25732 14.1719 6.25732Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1118_110">
+<rect width="22" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+          <p class="text-[#00000080] text-[14px] font-normal">Make design process easier…</p>
+          <button class="text-[#0084FE] text-[14px] font-bold">View More</button>
+        </div>
+        <img src="./public/seven.png " class="w-[70px] h-[70px] rounded-[12px] mx-[15px] my-[10px]">
       </div>
     </main>
+    <footer class="border-t-[1px] border-t-[#A6A6AA] mt-[15px] mb-[10px] ">
+   <ul class="flex justify-center items-center gap-[30px]">
+    <li><img src="./public/Icon.png" class="w-[24px] h-[24px]"> </li>
+    <li><img src="./public/Tab 2.png" class="w-[80px] h-[52px]"></li>
+    <li><img src="./public/Icon (2).png" class="w-[28px] h-[28px]"></li>
+   </ul>
+   <svg class="ml-[145px] mt-[40px]" width="134" height="5" viewBox="0 0 134 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="134" height="5" rx="2.5" fill="#060606"/>
+</svg>
+
+ 
+
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
